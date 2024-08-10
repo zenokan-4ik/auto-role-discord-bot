@@ -2,7 +2,6 @@ import discord
 import asyncio
 import os
 import server
-import keep_alive
 
 TOKEN = os.getenv('TOKEN')
 
@@ -45,5 +44,4 @@ async def start():
     client.loop.create_task(main())
 
 
-keep_alive.keep_alive()
 client.run(TOKEN)
